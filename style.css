@@ -98,7 +98,6 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  
 }
 .match{
   display: flex;
@@ -128,27 +127,7 @@ body{
 .match-date{
   margin-left:15px ;
 }
-/* .match{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 20px;
-}
-.match-time{
-  display: flex;
-  flex-direction: column;
-  width: 312px;
-  height: 242px;
-  justify-content: center;
-  align-items: center;
-}
-.match-flag{
-  display: flex;
-  align-items: center;
-}
 
-.match-time>h4{
-  justify-content: center;
-} */
 .menu-card{
   display: flex;
   margin-bottom: 100px;
@@ -240,3 +219,125 @@ body{
     color: #ffffff;
     margin: 15px;
   }
+
+  /* media query */
+
+  /* mobile device */
+
+  @media screen and (max-width: 576px) {
+    .container {
+      width: 334px;
+      height: 646px;
+      margin: auto;
+      border-radius: 10px;
+  }
+    #header{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 20px;
+     }
+     .header-title{
+      width: 258px;
+      height: 178px;
+
+    }
+     .header-title h1{
+        font-size: 30px;
+        text-align: center;
+     }
+     .header-title p{
+        width: 280px;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+     }
+     .watch-button{
+      display: block;
+      text-align: center;
+     }
+     .header-image img{
+        width: 233px;
+        height: 245px;
+        margin-top: 223px;
+        margin-left: 70px;
+     }
+     .menu-card{
+      display: block;
+     }
+     .menu{
+      background-color:#ffffff;
+     }
+     .menu-button{
+      border: 1px solid #E8E8E8;
+     }
+     .card{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+         }
+     } 
+
+     /* match.html mobile  */
+
+     #match-schedule {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+  }
+     /* media query for tablet */
+
+     @media screen and (min-width: 577px) and (max-width:768px ){
+      .container {
+        width: 734px;
+        height: 358px;
+        margin: auto;
+        border-radius: 10px;
+    }
+    #header{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 20px;
+     }
+     .header-title{
+      width: 316px;
+      height: 276px;
+
+    }
+     .header-title h1{
+        font-size: 30px;
+        text-align: center;
+     }
+     .header-title p{
+        width: 280px;
+        max-width: 100%;
+
+     }
+     .watch-button{
+
+     }
+     .header-image img{
+        width: 233px;
+        height: 245px;
+        margin-top: 223px;
+        margin-left: 70px;
+     }
+     .menu-card{
+      display: block;
+     }
+     .menu{
+      background-color:#ffffff;
+     }
+     .menu-button{
+      border: 1px solid #E8E8E8;
+     }
+     .card{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+         }
+     }
+
+  
